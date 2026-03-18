@@ -1,113 +1,167 @@
 <div align="center">
 
+<img src="https://img.shields.io/badge/AIXaaS™-Enterprise%20AI%20Orchestration-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AIXaaS™"/>
+
 # Inflexis
 
-### Enterprise AI Orchestration — Built for Governed Intelligence at Scale
+**Enterprise AI Orchestration — Governed, Auditable, Production-Ready**
 
-**[inflexis.ai](https://inflexis.ai)** · **[AIXaaS™ Platform](https://app.inflexis.ai)** · [Contact Us](mailto:bryan.shaw@inflexis.ai)
+[![Platform](https://img.shields.io/badge/Platform-Azure%20Container%20Apps-0078D4?style=flat-square&logo=microsoftazure)](https://app.inflexis.ai)
+[![Auth](https://img.shields.io/badge/Auth-Azure%20Entra%20SSO-0078D4?style=flat-square&logo=microsoftazure)](https://app.inflexis.ai/auth/login)
+[![LLMs](https://img.shields.io/badge/LLMs-Claude%20%7C%20GPT--4o%20%7C%20Gemini-8B5CF6?style=flat-square&logo=anthropic)](https://github.com/inflexis-ai/aixaas-docs/blob/main/docs/integrations/llm-providers.md)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](https://inflexis.ai)
 
----
+<br/>
+
+[**Live Platform →**](https://app.inflexis.ai) &nbsp;·&nbsp; [**Documentation →**](https://github.com/inflexis-ai/aixaas-docs) &nbsp;·&nbsp; [**Examples →**](https://github.com/inflexis-ai/mao-examples) &nbsp;·&nbsp; [**Contact →**](mailto:bryan.shaw@inflexis.ai)
 
 </div>
 
+---
+
 ## What We Build
 
-**Inflexis** develops the **AIXaaS™ platform** — AI-as-a-Service infrastructure that gives enterprises governed, auditable, multi-agent intelligence on their own data. We handle the architecture so your teams can focus on outcomes.
+**Inflexis** develops the **AIXaaS™ platform** (AI-as-a-Service) — enterprise AI orchestration infrastructure that gives organizations governed, auditable, multi-agent intelligence on their own data, deployed inside their own Azure tenant.
 
-Where most AI tools give you a chatbot, AIXaaS™ gives you an orchestration layer: multiple specialized agents, a compliance engine, a structured knowledge base, and a full audit trail — all deployable in your Azure tenant with your data never leaving your control.
+Where most AI tools give you a chatbot, AIXaaS™ gives you an **orchestration layer**: multiple specialized agents, a structured compliance engine, a hybrid RAG knowledge base, and a full audit trail — with your data never leaving your control.
 
 ---
 
 ## The MAO Platform
 
-**MAO (Multi-Agent Orchestration)** is the core engine behind AIXaaS™. It is a production-grade, enterprise-class AI system designed around a single principle: **aviation-grade dual redundancy**. Every agent handoff produces an auditable decision record. Every stage has a validated fallback. No single point of failure.
+**MAO (Multi-Agent Orchestration)** is the core engine behind AIXaaS™ — a production-grade system designed around a single principle: **aviation-grade dual redundancy**. Every agent handoff produces an auditable decision record. Every stage has a validated fallback. No single point of failure.
 
-### Core Capabilities
+<details>
+<summary><strong>🏗️ 10-Layer Architecture</strong></summary>
 
-| Capability | What It Means |
+<br/>
+
+```
+Layer 0   Foundation          Deterministic compliance detection (23 frameworks, zero LLM cost)
+Layer 1   Agent Architecture  8-role RBAC: admin → founder → cro → marketing → developer → member → client → demo
+Layer 2   LLMs & APIs         6-tier cost routing: Ollama → Gemini → GPT-4.1-nano → Haiku → GPT-4.1-mini → GPT-4o → Sonnet
+Layer 3   Tool Use            Universal Ingestor (20+ file types), Compliance Engine, PII masking
+Layer 4   Agent Frameworks    FastAPI, Claude Agent SDK, MCP server (8+ tools for Claude Desktop)
+Layer 5   Orchestration DAG   parse → PII mask → compliance scan → chunk → store (ADR logged at every stage)
+Layer 6   Memory Management   4-tier hybrid storage, disk persistence, semantic response cache (30–60% cost reduction)
+Layer 7   Knowledge & RAG     Hybrid BM25 + dense vector retrieval, sector governance, namespace isolation
+Layer 8   Deployment          Azure Container Apps, GitHub Actions CI/CD, custom domains, managed TLS
+Layer 9   Monitoring          ADR audit trail, guardrails (token budget + loop caps), App Insights
+Layer 10  Security & Gov.     Change control with diff review, archive/rollback, PII masking, sector RBAC
+```
+
+</details>
+
+<details>
+<summary><strong>📦 Core Capabilities</strong></summary>
+
+<br/>
+
+| Capability | Description |
 |---|---|
-| **Multi-Agent Orchestration** | Specialized agents for compliance, knowledge, meetings, and analysis — coordinated via a structured pipeline |
-| **Hybrid RAG Architecture** | 4-tier knowledge retrieval: keyword → semantic vector → cloud vector → Azure AI Search |
-| **Zero-Token Compliance** | 23 regulatory frameworks detected deterministically — no LLM API cost for compliance scanning |
-| **Enterprise Knowledge Base** | 20+ file types ingested: PDF, DOCX, PPTX, XLSX, audio recordings, YouTube, web pages, and more |
-| **Governed Change Control** | ADR (Architectural Decision Record) system: every agent instruction change is proposed, reviewed, and versioned |
-| **Meeting Intelligence** | Automatic transcription, SPICED sales scoring, per-attendee summaries, CRM sync |
-| **Cost-Aware Model Routing** | Frugal LLM selection per query type: routes to the cheapest model meeting quality requirements |
-| **Azure-Native Deployment** | Container Apps, Key Vault, Entra SSO, AI Search, Blob Storage, Application Insights — production-ready from day one |
+| **Multi-Agent Orchestration** | Specialized agents coordinated via a structured DAG pipeline |
+| **Hybrid RAG** | 4-tier knowledge retrieval: keyword → semantic vector → cloud vector → Azure AI Search |
+| **Zero-Token Compliance** | 23 regulatory frameworks detected deterministically — no LLM API cost |
+| **20+ File Types** | PDF, DOCX, PPTX, XLSX, audio recordings, YouTube, web pages, and more |
+| **ADR Change Control** | Every agent instruction change is proposed, reviewed, versioned, and recoverable |
+| **Meeting Intelligence** | Auto-transcription, SPICED sales scoring, per-attendee summaries, CRM sync |
+| **Cost-Aware Model Routing** | Routes to cheapest model meeting quality requirements — ~98% gross margin at scale |
+| **Azure-Native** | Container Apps, Key Vault, Entra SSO, AI Search, Blob — production from day one |
 
----
+</details>
 
-## Who We Work With
+<details>
+<summary><strong>💰 LLM Cost Routing Tiers</strong></summary>
 
-AIXaaS™ is built for enterprises where AI governance is not optional:
+<br/>
 
-- **Industrial & OT/ICS operators** — where process data, compliance docs, and threat intelligence must stay inside a hardened perimeter
-- **Energy & commodities companies** — where pricing data, contracts, and market intelligence require structured, auditable AI access
-- **Professional services firms** — where client data must remain isolated, searchable, and governed by role
-- **Technology companies** building AI-native products who need the orchestration layer without building it themselves
+| Tier | Provider | Input $/1M | Output $/1M | When Used |
+|---|---|---|---|---|
+| 0 | Ollama (local) | Free | Free | Dev / air-gapped |
+| 1 | Gemini 2.0 Flash | $0.075 | $0.30 | Demo, member roles |
+| 2 | Azure GPT-4.1-nano | $0.10 | $0.40 | Client, developer roles |
+| 3 | Claude Haiku | $0.80 | $4.00 | Internal team + compliance NS |
+| 4 | Azure GPT-4.1-mini | $0.40 | $1.60 | Balanced fallback |
+| 5 | Azure GPT-4o | $2.50 | $10.00 | Data residency required |
+| 6 | Claude Sonnet | $3.00 | $15.00 | Highest quality, last resort |
 
----
-
-## Architecture Principles
-
-```
-Layer 0   Foundation          Zero-token compliance detection, deterministic pattern matching
-Layer 1   Agent Architecture  8-role RBAC, role-specific agent directives, namespace governance
-Layer 2   LLMs & APIs         Multi-provider routing: Claude, Azure OpenAI, Gemini, local Ollama
-Layer 3   Tool Use            Universal Ingestor, Compliance Engine, PII masking layer
-Layer 4   Agent Frameworks    FastAPI, Jinja2, Claude Agent SDK, MCP server (8 tools)
-Layer 5   Orchestration       Multi-agent DAG: parse → mask → comply → chunk → store
-Layer 6   Memory Management   4-tier hybrid storage, disk persistence, semantic response cache
-Layer 7   Knowledge & RAG     Hybrid BM25 + dense vector retrieval, sector governance
-Layer 8   Deployment          Azure Container Apps, CI/CD, custom domains, managed TLS
-Layer 9   Monitoring          ADR audit trail, guardrails, budget tracking, App Insights
-Layer 10  Security & Gov.     Change control, archive/rollback, sector RBAC, PII masking
-```
+</details>
 
 ---
 
 ## Live Deployments
 
-| URL | Purpose |
-|---|---|
-| [app.inflexis.ai](https://app.inflexis.ai) | Employee portal — internal knowledge base, compliance tools, meeting intelligence |
-| [app.aixaas.org](https://app.aixaas.org) | Client portal — isolated tenant environments (Phase 7) |
+| URL | Purpose | Status |
+|---|---|---|
+| [app.inflexis.ai](https://app.inflexis.ai) | Employee portal — internal KB, compliance, meeting intelligence | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
+| [app.aixaas.org](https://app.aixaas.org) | Client portal — isolated tenant environments | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
 
-Both domains run on Azure Container Apps with Azure-managed TLS, Entra SSO, and continuous deployment via GitHub Actions.
+Both run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub Actions CI/CD (~5 min deploy on every `git push main`).
 
 ---
 
 ## Repositories
 
-| Repo | Visibility | Contents |
+| Repo | Type | Description |
 |---|---|---|
-| [aixaas-docs](https://github.com/inflexis-ai/aixaas-docs) | Public | Platform documentation, integration guides, architecture references |
-| [mao-examples](https://github.com/inflexis-ai/mao-examples) | Public | Integration examples, API usage patterns, demo notebooks |
-| `mao-platform` | Private | Core MAO platform — proprietary AIXaaS™ engine |
+| [**aixaas-docs**](https://github.com/inflexis-ai/aixaas-docs) | 📖 Public | Platform documentation, API reference, architecture guides, integration specs |
+| [**mao-examples**](https://github.com/inflexis-ai/mao-examples) | 💻 Public | Integration examples, Python scripts, Jupyter notebooks, API usage patterns |
+| **mao-platform** | 🔒 Private | Core AIXaaS™ engine — proprietary MAO platform source |
 
 ---
 
 ## Technology Stack
 
-**Cloud:** Azure Container Apps · Azure AI Search · Azure Blob Storage · Azure Key Vault · Azure Entra ID · Application Insights · Azure Files
-**AI / LLMs:** Anthropic Claude · Azure OpenAI · Google Gemini · Ollama (local)
-**Backend:** Python 3.12 · FastAPI · Uvicorn · Jinja2
-**Knowledge:** Qdrant · Pinecone · Azure AI Search · BM25 keyword index
-**Data Formats:** PDF · DOCX · PPTX · XLSX · Markdown · Audio (MP3/WAV/MP4) · YouTube · Web pages
-**Compliance Frameworks:** GDPR · HIPAA · PCI-DSS · SOC2 · NIST · ISO 27001 · CCPA · FedRAMP · and 15 more
-**Auth:** HTTP Basic Auth · Azure Entra SSO (OIDC) · Signed session cookies
+```
+Cloud        Azure Container Apps · ACR · Key Vault · AI Search · Blob · Files · Entra · App Insights
+AI / LLMs    Anthropic Claude · Azure OpenAI · Google Gemini · Ollama · Azure Speech · Azure Doc Intelligence
+Backend      Python 3.12 · FastAPI · Uvicorn · Jinja2
+Knowledge    Qdrant · Pinecone · Azure AI Search · BM25 keyword (4-tier hybrid)
+Auth         HTTP Basic Auth · Azure Entra SSO (OIDC) · Signed session cookies
+CI/CD        GitHub Actions → Azure Container Registry → Container Apps (~5 min)
+Compliance   23 frameworks: GDPR · HIPAA · PCI-DSS · SOC 2 · NIST · ISO 27001 · NERC CIP · IEC 62443 · +15 more
+```
+
+---
+
+## Ecosystem & Related Projects
+
+AIXaaS™ is built on and alongside the best open-source AI infrastructure available. These are the projects we watch closely, draw from, and complement:
+
+| Project | What It Is | Relationship to MAO |
+|---|---|---|
+| [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) | Official Anthropic Python SDK | Primary LLM integration |
+| [anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) | Claude API usage patterns | Reference for agent prompt patterns |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP server implementations | MAO ships its own MCP server (8 tools) |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | Microsoft's multi-agent framework | Architectural comparison — MAO's ADR system fills AutoGen's governance gap |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Agent orchestration via DAG | MAO uses a similar DAG pipeline pattern, custom-built without framework overhead |
+| [joaomdmoura/crewAI](https://github.com/joaomdmoura/crewAI) | Role-based agent crews | MAO's 8-role RBAC is the enterprise governance layer CrewAI lacks |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Unified LLM API routing | MAO's model router solves the same problem with per-role cost governance built in |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | High-performance vector database | MAO's Tier 2 semantic store |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Data framework for LLM applications | RAG architecture reference |
+
+---
+
+## Industry Verticals
+
+AIXaaS™ is purpose-built for enterprises where AI governance is not optional:
+
+- 🏭 **Industrial & OT/ICS** — IEC 62443, NERC CIP compliance; data never leaves Azure tenant; dual-container IP isolation for OEM partnerships
+- ⛽ **Energy & Commodities** — Pricing data, contracts, and market intelligence with structured, auditable AI access
+- 🏢 **Professional Services** — Client data isolation, role-scoped knowledge, ADR-governed change control
+- 🏗️ **Technology Builders** — Teams building AI-native products who need the orchestration layer without building it from scratch
 
 ---
 
 ## Contact
 
-**Bryan Shaw** — CTO & Founding Partner
-📧 [bryan.shaw@inflexis.ai](mailto:bryan.shaw@inflexis.ai)
-🌐 [inflexis.ai](https://inflexis.ai)
-💼 [LinkedIn](https://www.linkedin.com/in/bryanjshaw/)
+**Bryan Shaw** — CTO & Founding Partner, Inflexis
+📧 [bryan.shaw@inflexis.ai](mailto:bryan.shaw@inflexis.ai) · 🌐 [inflexis.ai](https://inflexis.ai) · 💼 [LinkedIn](https://www.linkedin.com/in/bryanjshaw/)
 
 ---
 
 <div align="center">
-<sub>© 2026 Inflexis · AIXaaS™ is a trademark of Inflexis · All MAO Platform source code is proprietary and confidential</sub>
+<sub>© 2026 Inflexis · AIXaaS™ is a trademark of Inflexis · MAO Platform source code is proprietary and confidential</sub>
 </div>
