@@ -69,6 +69,9 @@ Layer 10  Security & Gov.     Change control with diff review, archive/rollback,
 | **Meeting Intelligence** | Auto-transcription, SPICED sales scoring, per-attendee summaries, CRM sync |
 | **Cost-Aware Model Routing** | Routes to cheapest model meeting quality requirements — ~98% gross margin at scale |
 | **Azure-Native** | Container Apps, Key Vault, Entra SSO, AI Search, Blob — production from day one |
+| **Sub-Agent Isolation** | Namespace-scoped execution with RBAC boundaries — structured task decomposition across agent roles |
+| **Token-Aware Payloads** | Zero-token compliance detection + semantic cache reduce LLM spend by 30-60% without quality loss |
+| **ZeroTrusted SOAR Integration** | 57+ AI security agent compatibility — anomaly detection, threat classification, automated response orchestration |
 
 </details>
 
@@ -97,8 +100,9 @@ Layer 10  Security & Gov.     Change control with diff review, archive/rollback,
 |---|---|---|
 | [app.inflexis.ai](https://app.inflexis.ai) | Employee portal — internal KB, compliance, meeting intelligence | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
 | [app.aixaas.org](https://app.aixaas.org) | Client portal — isolated tenant environments | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
+| [Demo Hub](https://inflexis-ai.github.io/mao-examples/demos/) | Interactive demos — runs in browser, no login required | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
 
-Both run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub Actions CI/CD (~5 min deploy on every `git push main`).
+Both portals run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub Actions CI/CD (~5 min deploy on every `git push main`). The demo hub is hosted on GitHub Pages.
 
 ---
 
@@ -107,8 +111,9 @@ Both run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub A
 | Repo | Type | Description |
 |---|---|---|
 | [**aixaas-docs**](https://github.com/inflexis-ai/aixaas-docs) | 📖 Public | Platform documentation, API reference, architecture guides, integration specs |
-| [**mao-examples**](https://github.com/inflexis-ai/mao-examples) | 💻 Public | Integration examples, Python scripts, Jupyter notebooks, API usage patterns |
+| [**mao-examples**](https://github.com/inflexis-ai/mao-examples) | 💻 Public | Integration examples, Python scripts, Jupyter notebooks, [interactive demos](https://inflexis-ai.github.io/mao-examples/demos/) |
 | **mao-platform** | 🔒 Private | Core AIXaaS™ engine — proprietary MAO platform source |
+| **team-workspace** | 🔒 Private | Internal design docs, architecture pages, revenue models, client materials |
 
 ---
 
@@ -152,6 +157,7 @@ AIXaaS™ is purpose-built for enterprises where AI governance is not optional:
 - ⛽ **Energy & Commodities** — Pricing data, contracts, and market intelligence with structured, auditable AI access
 - 🏢 **Professional Services** — Client data isolation, role-scoped knowledge, ADR-governed change control
 - 🏗️ **Technology Builders** — Teams building AI-native products who need the orchestration layer without building it from scratch
+- 🎓 **Education & K-12** — Student risk detection, RTI intervention orchestration, FERPA/IDEA compliance, and district-level governance
 
 ---
 
