@@ -83,7 +83,7 @@ Layer 10  Security & Gov.     Change control with diff review, archive/rollback,
 |---|---|---|
 | [app.inflexis.ai]| Employee portal — internal KB, compliance, meeting intelligence | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square) |
 | [app.aixaas.org]| Client portal — isolated tenant environments | ![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square)
-| Interactive demos — runs in browser, Both portals run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub Actions CI/CD (~5 min deploy on every `git push main`). The demo hub is hosted on GitHub Pages |![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square)|.|
+| The demo hub is hosted on GitHub Pages Interactive demos — runs in browser, | Both portals run on Azure Container Apps with Azure-managed TLS, Entra SSO, and GitHub Actions CI/CD (~5 min deploy on every `git push main`). |![Live](https://img.shields.io/badge/status-live-brightgreen?style=flat-square)|.|
 
 *Contact Inflexis.ai for access*
 ---
