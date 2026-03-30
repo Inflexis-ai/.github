@@ -75,23 +75,6 @@ Layer 10  Security & Gov.     Change control with diff review, archive/rollback,
 
 </details>
 
-<details>
-<summary><strong>💰 LLM Cost Routing Tiers</strong></summary>
-
-<br/>
-
-| Tier | Provider | Input $/1M | Output $/1M | When Used |
-|---|---|---|---|---|
-| 0 | Ollama (local) | Free | Free | Dev / air-gapped |
-| 1 | Gemini 2.0 Flash | $0.075 | $0.30 | Demo, member roles |
-| 2 | Azure GPT-4.1-nano | $0.10 | $0.40 | Client, developer roles |
-| 3 | Claude Haiku | $0.80 | $4.00 | Internal team + compliance NS |
-| 4 | Azure GPT-4.1-mini | $0.40 | $1.60 | Balanced fallback |
-| 5 | Azure GPT-5.4 | $2.50 | $10.00 | Data residency required |
-| 6 | Claude Sonnet | $3.00 | $15.00 | Highest quality, last resort |
-
-</details>
-
 ---
 
 ## Live Deployments
@@ -150,18 +133,6 @@ AIXaaS™ is built on and alongside the best open-source AI infrastructure avail
 | [langchain-ai/langsmith](https://github.com/langchain-ai/langsmith-sdk) | LLM observability, agent tracing, and evaluation platform | MAO's ADR audit trail solves the same agent observability problem — LangSmith integration is a roadmap item |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | Lightweight code-first agent framework (~1,000 lines) supporting any LLM provider | Model-agnostic agent design — complements MAO's multi-provider LLM routing and namespace isolation pattern |
 | [huggingface/transformers](https://github.com/huggingface/transformers) | 800K+ models, datasets, Inference Endpoints, Enterprise Hub (SOC 2, AWS/Azure/GCP) | MAO's local semantic store (Tier 2) uses HuggingFace sentence-transformers for embedding; HF Enterprise Hub is a candidate for private model hosting |
-
----
-
-## Industry Verticals
-
-AIXaaS™ is purpose-built for enterprises where AI governance is not optional:
-
-- 🏭 **Industrial & OT/ICS** — IEC 62443, NERC CIP compliance; data never leaves Azure tenant; dual-container IP isolation for OEM partnerships
-- ⛽ **Energy & Commodities** — Pricing data, contracts, and market intelligence with structured, auditable AI access
-- 🏢 **Professional Services** — Client data isolation, role-scoped knowledge, ADR-governed change control
-- 🏗️ **Technology Builders** — Teams building AI-native products who need the orchestration layer without building it from scratch
-- 🎓 **Education & K-12** — Student risk detection, RTI intervention orchestration, FERPA/IDEA compliance, and district-level governance
 
 ---
 
