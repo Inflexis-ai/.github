@@ -8,7 +8,7 @@
 
 [![Platform](https://img.shields.io/badge/Platform-Azure%20Container%20Apps-0078D4?style=flat-square&logo=microsoftazure)](https://app.inflexis.ai)
 [![Auth](https://img.shields.io/badge/Auth-Azure%20Entra%20SSO-0078D4?style=flat-square&logo=microsoftazure)](https://app.inflexis.ai/auth/login)
-[![LLMs](https://img.shields.io/badge/LLMs-Claude%20%7C%20GPT--4o%20%7C%20Gemini-8B5CF6?style=flat-square&logo=anthropic)](https://github.com/inflexis-ai/aixaas-docs/blob/main/docs/integrations/llm-providers.md)
+[![LLMs](https://img.shields.io/badge/LLMs-Claude%20%7C%20GPT--5.4%20%7C%20Gemini-8B5CF6?style=flat-square&logo=anthropic)](https://github.com/inflexis-ai/aixaas-docs/blob/main/docs/integrations/llm-providers.md)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](https://inflexis.ai)
@@ -87,7 +87,7 @@ Layer 10  Security & Gov.     Change control with diff review, archive/rollback,
 | 2 | Azure GPT-4.1-nano | $0.10 | $0.40 | Client, developer roles |
 | 3 | Claude Haiku | $0.80 | $4.00 | Internal team + compliance NS |
 | 4 | Azure GPT-4.1-mini | $0.40 | $1.60 | Balanced fallback |
-| 5 | Azure GPT-4o | $2.50 | $10.00 | Data residency required |
+| 5 | Azure GPT-5.4 | $2.50 | $10.00 | Data residency required |
 | 6 | Claude Sonnet | $3.00 | $15.00 | Highest quality, last resort |
 
 </details>
@@ -146,6 +146,10 @@ AIXaaS™ is built on and alongside the best open-source AI infrastructure avail
 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | Unified LLM API routing | MAO's model router solves the same problem with per-role cost governance built in |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | High-performance vector database | MAO's Tier 2 semantic store |
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | Data framework for LLM applications | RAG architecture reference |
+| [NVIDIA AI-Q + NeMo Agent Toolkit](https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/) | Hierarchical planner→researcher agent pattern, NIM microservices, LangGraph orchestration | Architectural alignment — MAO implements the same sub-agent isolation, structured task decomposition, and 3-tier LLM strategy independently |
+| [langchain-ai/langsmith](https://github.com/langchain-ai/langsmith-sdk) | LLM observability, agent tracing, and evaluation platform | MAO's ADR audit trail solves the same agent observability problem — LangSmith integration is a roadmap item |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | Lightweight code-first agent framework (~1,000 lines) supporting any LLM provider | Model-agnostic agent design — complements MAO's multi-provider LLM routing and namespace isolation pattern |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 800K+ models, datasets, Inference Endpoints, Enterprise Hub (SOC 2, AWS/Azure/GCP) | MAO's local semantic store (Tier 2) uses HuggingFace sentence-transformers for embedding; HF Enterprise Hub is a candidate for private model hosting |
 
 ---
 
